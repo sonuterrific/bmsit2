@@ -1,0 +1,278 @@
+<head>
+  <title>BMSIT Corner</title>
+  <link rel="icon" type="image/ico" href="/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<!-- this is homepage -->
+<body>
+    {{> navigation}}
+    {{> tabs}}
+    {{> pagination}}
+</body>
+<!-- Navigation bar -->
+<template name="navigation">
+    <div class="navbar-fixed">
+        <nav>
+            <a href="#" class="brand-logo center">BMSIT</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#!">Profile</a></li>
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">Notification</a></li>
+                <li><a href="#!">Logout</a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav">
+                <div class="center-align">
+                    <div class="cover">
+                        <img class="circle responsive-img hoverable" src="/images/co.png">
+                    </div>
+                </div>
+                <li><a href="#!">Profile</a></li>
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">Settings</a></li>
+                <li><a href="#!">Logout</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <!-- notification bell-->
+        </nav>
+    </div>
+</template>
+<!-- Tabs -->
+<template name="tabs">
+  <div class="row">
+   <div class="col s12">
+     <ul class="tabs">
+       <li class="tab col s4"><a class="active" href="#test1">Events</a></li>
+       <li class="tab col s4"><a  href="#test2">News</a></li>
+       <li class="tab col s4"><a href="#test3">Maps</a></li>
+     </ul>
+   </div>
+<!--THIS IS EVENTS-->
+   <div id="test1" class="col s12">
+
+     <div class="wrapper">
+
+                 <div class="card radius shadowDepth1">
+                     <div class="card__image border-tlr-radius">
+                         <img src="/images/23.jpg" alt="image" class="border-tlr-radius">
+                     </div>
+
+                     <div class="card__content card__padding">
+                         <div class="card__share">
+                             <div class="card__social">
+                                 <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                                 <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                                 <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                             </div>
+
+                             <a id="share" class="share-toggle share-icon" href="#"></a>
+
+                         </div>
+                         <div class="card__meta">
+                             <time><p>
+                               <!-- Modal Trigger -->
+                                 <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Tomorrow is a holiday</a>
+
+                                 <!-- Modal Structure -->
+                                 <div id="modal1" class="modal modal-fixed-footer">
+                                   <div class="modal-content">
+                                     <h4>Tomorrow is a holiday</h4>
+                                     <p>Due to heavy rain in bangalore, government declared holiday for all school and education institutions.</p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Done</a>
+                                   </div>
+                                 </div>
+                             </p></time>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+<!-- second post of events-->
+<div class="wrapper">
+
+            <div class="card radius shadowDepth1">
+                <div class="card__image border-tlr-radius">
+                    <img src="/images/21.jpg" alt="image" class="border-tlr-radius">
+                </div>
+
+                <div class="card__content card__padding">
+                    <div class="card__share">
+                        <div class="card__social">
+                            <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                            <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                            <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                        </div>
+
+                        <a id="share" class="share-toggle share-icon" href="#"></a>
+
+                    </div>
+                    <div class="card__meta">
+                        <time><p>
+                          <!-- Modal Trigger -->
+                            <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Hello Environment Seminar</a>
+
+                            <!-- Modal Structure -->
+                            <div id="modal1" class="modal modal-fixed-footer">
+                              <div class="modal-content">
+                                <h4>Environment Seminar</h4>
+                                <p>BMSIT is conducting a seminar on environment studies & general knowledge, intrested people follow the given link below.</p>
+                                <p>Registration is free of cost and you will also get full day attendance for attending the seminar.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Done</a>
+                              </div>
+                            </div>
+                        </p></time>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+   </div>
+
+
+
+<!--THIS IS NEWS-->
+
+
+   <div id="test2" class="col s12">
+
+
+
+
+     <div class="wrapper">
+
+                 <div class="card radius shadowDepth1">
+                     <div class="card__image border-tlr-radius">
+                         <img src="/images/22.jpg" alt="image" class="border-tlr-radius">
+                     </div>
+
+                     <div class="card__content card__padding">
+                         <div class="card__share">
+                             <div class="card__social">
+                                 <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                                 <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                                 <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                             </div>
+
+                             <a id="share" class="share-toggle share-icon" href="#"></a>
+                         </div>
+
+                         <div class="card__meta">
+                             <a href="#">Tech News</a>
+                             <time>23rd April</time>
+                         </div>
+                         <article class="card__article">
+                       <h4><a href="#">Window Got Bash - Good news for Developers</a></h4>
+
+                       <p>Microsoft planning to put Ubuntu bash on Windows 10. Developer version is already available.</p>
+                   </article>
+               </div>
+
+               <div class="card__action">
+
+                   <div class="card__author">
+                     <img src="/images/abt3.jpg" class="col s2 circle responsive-img" alt="user">
+                       <div class="card__author-content">
+                          Posted By <a href="#">Sudhanshu</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+       </div>
+
+
+
+
+
+
+       <div class="wrapper">
+
+                   <div class="card radius shadowDepth1">
+                       <div class="card__image border-tlr-radius">
+                           <img src="/images/22.jpg" alt="image" class="border-tlr-radius">
+                       </div>
+
+                       <div class="card__content card__padding">
+                           <div class="card__share">
+                               <div class="card__social">
+                                   <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                                   <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                                   <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                               </div>
+
+                               <a id="share" class="share-toggle share-icon" href="#"></a>
+                           </div>
+
+                           <div class="card__meta">
+                               <a href="#">Tech News</a>
+                               <time>23rd April</time>
+                           </div>
+                           <article class="card__article">
+                         <h4><a href="#">Window Got Bash - Good news for Developers</a></h4>
+
+                         <p>Microsoft planning to put Ubuntu bash on Windows 10. Developer version is already available.</p>
+                     </article>
+                 </div>
+
+                 <div class="card__action">
+
+                     <div class="card__author">
+                         <img src="/images/abt3.jpg" class="col s2 circle responsive-img" alt="user">
+                         <div class="card__author-content">
+                            Posted By <a href="#">Sudhanshu</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+
+
+
+
+
+</div>
+
+<!--This is Maps-->
+
+
+   <div id="test3" class="col s12">
+
+<div name="map" class="map-container">
+{{> googleMap name="map" options=mapOptions}}
+</div>
+   
+   </div>
+  </div>
+
+
+
+
+
+</template>
+
+
+
+
+
+
+<!-- footer pagination -->
+<template name="pagination">
+    <footer>
+        <ul class="pagination center-align">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+    </footer>
+</template>
